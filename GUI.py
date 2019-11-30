@@ -61,6 +61,22 @@ def log_popup():
     login_btn = tk.Button(login_popup,text='Log In',command = chk_login)
     login_btn.pack()
 
+def new_user():
+    nu_window = tk.Toplevel(window)
+    nu_window.title('New User')
+    init_lbl = tk.Label(nu_window,text='Provide a User Name')
+    init_lbl.pack()
+    
+    init_txt = tk.Text(nu_window,height=1,width=10)
+    init_txt.focus_set()
+    init_txt.pack()
+    
+    init_btn = tk.Button(nu_window,text='Continue',command= usr_chk)
+    def usr_chk():
+        
+    
+    
+    
 
 window = tk.Tk() #Main Window
 window.title("Javo's Login App")
